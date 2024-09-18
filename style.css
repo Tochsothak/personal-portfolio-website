@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  color: #ff5722;
+}
+a {
+  color: #ff5722;
+  text-decoration: none;
+}
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.navbar li {
+  margin: 0 20px;
+}
+.navbar a {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+}
+.navbar a:hover {
+  background-color: #ff5722;
+}
+.hero {
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/7358/startup-photos.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+.btn {
+  padding: 15px 30px;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #e64a19;
+}
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.about,
+.projects,
+.contact {
+  background-color: #f9f9f9;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.project-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-item {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
